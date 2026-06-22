@@ -4,10 +4,10 @@ function random(number){
     return Math.floor(Math.random() * (number + 1));
 }
 
-function mudaCor(button){
+function mudaCor(event){
     let rndCol = "rgb(" + random(255) + "," + random(255) + "," + random(255) + ")";
-    button.target.style.backgroundColor = rndCol;
-    console.log(button);
+    event.target.style.backgroundColor = rndCol;
+    console.log(event);
 }
 // btn.onclick -> Faz evento ao clicar uma vez.
 
